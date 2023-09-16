@@ -12,7 +12,8 @@ const passwordError = document.querySelector("#passError");
 const boton = document.querySelector("#boton");
 //Funciones
 
-boton.addEventListener("click", () => {
+boton.addEventListener("click", (event) => {
+  event.preventDefault();
   validateEmpity(
     firstName.value,
     firstName,
